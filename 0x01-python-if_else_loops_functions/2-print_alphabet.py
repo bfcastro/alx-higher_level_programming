@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-fizzbuzz = __import__('12-fizzbuzz').fizzbuzz
-
-fizzbuzz()
-print("")
+#!/usr/bin/python3
+for i in range(97, 123):
+    print(chr(i).format(), end="")
