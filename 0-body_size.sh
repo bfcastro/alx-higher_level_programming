@@ -6,10 +6,7 @@ if [$# -ne 1]; then
 	exit 1
 fi
 
-#Stores the provided URL as the first argument URL=$1
-#Use curl to send a request to the URL and retrieve the body size
-# -s option is used to suppress progress meter
-# -w option is used to specify output format, %s gives the size in bytes
+URL=$1
 
 BODY_SIZE=$(curl -s -w "%{size_download}" -o /dev/null $URL)
 
